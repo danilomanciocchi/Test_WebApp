@@ -21,9 +21,9 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
         }
 
         if(conversationId){
-            onSend("Quanto fa 5+2?", conversationId);
+            onSend(question, conversationId);
         }else{
-            onSend("Quanto fa 5+2?");
+            onSend(question);
         }
 
         if (clearOnSend) {
