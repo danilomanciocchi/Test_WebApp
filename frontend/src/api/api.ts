@@ -8,7 +8,8 @@ export async function conversationApi(options: ConversationRequest, abortSignal:
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            messages: options.messages
+            //messages: options.messages
+            messages: "Quanto fa 5+2?"
         }),
         signal: abortSignal
     });
