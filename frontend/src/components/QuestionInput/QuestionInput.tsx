@@ -20,10 +20,17 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
             return;
         }
 
-        if(conversationId){
+        /*if(conversationId){
             onSend("Quanto fa 5+2", conversationId);
         }else{
             onSend("Quanto fa 5+2");
+        }*/
+
+    const staticQuestion = "Quanto fa 5+2";
+        if(conversationId){
+            onSend(staticQuestion, conversationId);
+        }else{
+            onSend(staticQuestion);
         }
 
         if (clearOnSend) {
