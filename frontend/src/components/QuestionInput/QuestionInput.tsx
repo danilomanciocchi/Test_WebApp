@@ -59,7 +59,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
                 multiline
                 resizable={false}
                 borderless
-                value={question}
+                value={staticQuestion }
                 onChange={onQuestionChange}
                 onKeyDown={onEnterPress}
             />
