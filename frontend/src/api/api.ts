@@ -10,10 +10,9 @@ export async function conversationApi(options: ConversationRequest, abortSignal:
         body: JSON.stringify({
             messages: [
                 {"role": "system", "content": "You are a helpful IT assistant that answers questions."},
-                {"role": "user", "content": "Quanto fa 5+2"}
+                {"role": "user", "content": "Quanto fa 5+2?"}
             ]
-            //messages: options.messages
-            //messages: "Quanto fa 5+2?"
+            
         }),
         signal: abortSignal
     });
