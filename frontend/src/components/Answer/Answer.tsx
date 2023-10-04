@@ -16,7 +16,7 @@ interface Props {
     onCitationClicked: (citedDocument: Citation) => void;
 }
 
-export const Answer = ({
+export const Answer = ({ 
     answer,
     onCitationClicked
 }: Props) => {
