@@ -23,7 +23,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
         if(conversationId){
             onSend(question, conversationId);
         }else{
-            onSend(question);
+            onSend("CHi ha vinto lo scudetto nel 2001?");
         }
 
     const onEnterPress = (ev: React.KeyboardEvent<Element>) => {
