@@ -21,7 +21,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
         }
 
         if(conversationId){
-            onSend(question, conversationId);
+            onSend("CHi ha vinto lo scudetto nel 2001?", conversationId);
         }else{
             onSend("CHi ha vinto lo scudetto nel 2001?");
         }
