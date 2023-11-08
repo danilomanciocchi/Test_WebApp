@@ -58,7 +58,7 @@ export const historyList = async (): Promise<Conversation[] | null> => {
                 id: conv.id,
                 title: conv.title,
                 date: conv.createdAt,
-                messages: "Risultato 5+7"
+                messages: convMessages
             };
             return conversation;
         }));
@@ -93,9 +93,10 @@ export const historyRead = async (convId: string): Promise<ChatMessage[]> => {
                     id: msg.id,
                     role: msg.role,
                     date: msg.createdAt,
-                    content: msg.content,
+                    content: "Risultato 5+7",
                 }
                 messages.push(message)
+                console.error("Prova");
             });
         }
         return messages;
