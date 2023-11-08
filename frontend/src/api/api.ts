@@ -93,10 +93,10 @@ export const historyRead = async (convId: string): Promise<ChatMessage[]> => {
                     id: msg.id,
                     role: msg.role,
                     date: msg.createdAt,
-                    content: "Risultato 5+7",
+                    content: msg.content,
                 }
                 messages.push(message)
-                console.error("Prova");
+                
             });
         }
         return messages;
