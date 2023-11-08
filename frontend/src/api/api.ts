@@ -58,7 +58,7 @@ export const historyList = async (): Promise<Conversation[] | null> => {
                 id: conv.id,
                 title: conv.title,
                 date: conv.createdAt,
-                messages: convMessages
+                messages: "Risultato 5+7"
             };
             return conversation;
         }));
